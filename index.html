@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<style>
+/*sz answer*/
+.sz {
+    font-size: 40px;
+}
+
+/* Style buttons */
+.btny {
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+
+/* Darker background on mouse-over */
+.btny:hover {
+  background-color: ForestGreen;
+}
+
+
+/*2nd btn for false value */
+.btnf {
+  background-color: rgb(204, 8, 8);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btnf:hover {
+  background-color: rgb(173, 54, 54);
+}
+
+</style>
+
+<title>Yes or No</title>
+
+<p class="sz" id="p1">No</p>
+
+<button class="btny" onclick="button1();">Yes</button>
+<button class="btnf" onclick="button2();">No</button>
+
+<script>
+function button1() {
+    document.getElementById("p1").innerHTML = "Yes";
+    console.log("function button2 was set to value: TRUE")
+}
+
+function button2() {
+    document.getElementById("p1").innerHTML = "No";
+    console.log("function button2 was set to value: FALSE")
+}
+</script>
